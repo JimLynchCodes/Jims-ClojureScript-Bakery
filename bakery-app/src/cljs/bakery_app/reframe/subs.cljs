@@ -11,13 +11,7 @@
   (fn [db]
     (:items db)))
 
-(re-frame/reg-sub
-  ::cartItems
-  (fn [db]
-    (:cartItems (:shoppingCart db))))
-
-
-(defn ya [acc item]
+(defn combinePricesOfSelected [acc item]
   (+ acc (get (nth item 1) :priceOfQuantitySelected)))
 
 (re-frame/reg-sub
@@ -26,7 +20,7 @@
 
 
     (reduce
-     ya
+     combinePricesOfSelected
       0 (:items db))
 ;
     ))
