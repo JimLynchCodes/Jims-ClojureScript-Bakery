@@ -7,7 +7,6 @@
             [bakery-app.reframe.handlers :as handlers]))
 
 (enable-console-print!)
-
 (defn dev-setup []
   (when config/debug?
     (enable-console-print!)
