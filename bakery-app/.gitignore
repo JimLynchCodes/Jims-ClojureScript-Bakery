@@ -1,5 +1,6 @@
 /*.log
 /target
 /*-init.clj
-/resources/public/js/compiled
+# Adding resources to git for gh-pages github hosting
+# /resources/public/js/compiled
 out
