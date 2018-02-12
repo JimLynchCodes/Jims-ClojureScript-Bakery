@@ -17,19 +17,6 @@
 (re-frame/reg-sub
   ::totalPrice
   (fn [db]
-
-
     (reduce
      combinePricesOfSelected
-      0 (:items db))
-;
-    ))
-;    (for [item (:shoppingCart db)]
-;      ^{:key item}
-;
-;      (println "in sub!" item)
-
-;      ()
-;      )))
-
-
+      0 (:items db))))
