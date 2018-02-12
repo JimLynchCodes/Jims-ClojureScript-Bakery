@@ -19,16 +19,6 @@
        :render       
                       (fn []         
                         [:div {:class "root-component"}
-
                          [product-list/product-list-component]
-                         [shopping-cart/shopping-cart-component]
-                         ]
-
-                         )})
-
-
-
-
-  )
-)
+                         [shopping-cart/shopping-cart-component]])})))
 
