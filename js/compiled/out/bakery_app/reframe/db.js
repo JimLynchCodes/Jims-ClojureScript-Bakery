@@ -1,6 +1,0 @@
-// Compiled by ClojureScript 1.9.908 {}
-goog.provide('bakery_app.reframe.db');
-goog.require('cljs.core');
-bakery_app.reframe.db.default_db = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),"re-frame",new cljs.core.Keyword(null,"items","items",1031954938),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"shoppingCart","shoppingCart",1335540168),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"cartItems","cartItems",-301802854),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"muffin","muffin",-1545395306),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),"derp",new cljs.core.Keyword(null,"quantity","quantity",-1929050694),(1),new cljs.core.Keyword(null,"subtotal","subtotal",-190530292),(500)], null),new cljs.core.Keyword(null,"brownie","brownie",-1543306131),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),"brownie",new cljs.core.Keyword(null,"quantity","quantity",-1929050694),(1),new cljs.core.Keyword(null,"subtotal","subtotal",-190530292),(500)], null)], null),new cljs.core.Keyword(null,"orderTotalPrice","orderTotalPrice",289114172),(0)], null)], null);
-
-//# sourceMappingURL=db.js.map?rel=1518440252412
