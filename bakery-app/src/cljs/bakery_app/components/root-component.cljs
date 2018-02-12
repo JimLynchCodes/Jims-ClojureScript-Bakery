@@ -28,7 +28,7 @@
 
        :render        ;; Note:  is not :render
                       (fn []           ;; remember to repeat parameters
-                        [:div
+                        [:div {:class "root-component"}
 
                          [product-list/product-list-component]
                          [shopping-cart/shopping-cart-component]

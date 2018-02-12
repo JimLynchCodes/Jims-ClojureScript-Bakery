@@ -10,45 +10,31 @@
 
         ]
 
-    [:div
-    [:h1 "Cart"]
+    [:div {:class "shoppingCartContainer"}
+      [:div {:class "shoppingCartBox"}
+      [:h2 "Cart"]
+       [:hr]
+        [:div
+         (for [item @items]
+           ^{:key item}
 
+           (if (> (:quantity (nth item 1)) 0)
+              [:div {:class "shoppingCart__item"}
+                [:span (:name (nth item 1))]
+                " x "
+                [:span (:quantity (nth item 1))]
+                " ...... $"
+                [:span (:priceOfQuantitySelected (nth item 1))]
+              ])
+             )
+         [:div
+           [:div {:class "shoppingCart__totalContainer"} "Total $"
+           [:span @totalPrice]]]
 
-    [:h1 @totalPrice]
+      [:button {:on-click #(js/alert "Credit card processing coming soon!") :class "shoppingCart__checkoutButton"}
+       (str "Checkout")]
+      ]]
 
-     ;      [:div "Hello fffrom " (:name (:muffin @items))]
-;      [:div "Hello fffrom " (str @name)]
-;      [:div "Hello fffrom " (str @cartItems)]
-
-     [:hr]
-
-
-      [:ul
-       (for [item @items]
-         ^{:key item} [:div
-
-;              [:span (str item)]
-;              [:span (nth item 1)]
-
-              [:span (:name (nth item 1))]
-                       " x "
-              [:span (:quantity (nth item 1))]
-                       " $"
-              [:span (:priceOfQuantitySelected (nth item 1))]
-
-            ]
-
-            )
-
-
-       [:div
-       [:span "Total "]
-       [:span @totalPrice]
-        ]
-
-    [:button {:on-click #(js/alert "Navigating to checkout!")}
-     (str "Checkout")]
-    ]]
-
+     ]
 
     ))

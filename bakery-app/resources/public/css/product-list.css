@@ -1,7 +1,31 @@
 .productList {
-  width: 50vw;
   background-color: papayawhip;
+  padding: 1vh 1vw 6vh;
+  background: linear-gradient(to top, #0033cc 64%, #cc66ff 103%);
+}
+.productBox {
+  width: 41vw;
+  min-height: 100px;
+  padding: 1vh 2vw;
+  background-color: papayawhip;
+  display: inline-flex;
+  margin-bottom: 2vh;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.productBox__image {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  max-width: 15vw;
+  max-height: 12vh;
+  margin-right: 2vw;
+}
+.productBox__addtoCartButton {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  margin-top: 1vh;
 }
 .productBox__textContainer__title {
-  width: 50vw;
+  width: 45vw;
 }

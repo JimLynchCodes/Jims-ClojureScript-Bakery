@@ -16,20 +16,13 @@
   (print "leftovers!" (mod quantity bulkPrice))
 
 
-
-(let [g
-  (if (< quantity bulkAmount)
+  (if (= nil bulkAmount)
     (* quantity singlePrice)
-    (+ (* (Math/floor (/ quantity bulkAmount)) bulkPrice)
-         (* (mod quantity bulkAmount) singlePrice))
-
-
-      )
-
-      ]
-
-  (println "g is " g)
-  g)
+    (if (< quantity bulkAmount)
+      (* quantity singlePrice)
+      (+ (* (Math/floor (/ quantity bulkAmount)) bulkPrice)
+         (* (mod quantity bulkAmount) singlePrice)))
+    )
 
 
   )

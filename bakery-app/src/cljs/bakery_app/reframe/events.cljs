@@ -51,11 +51,11 @@
 
       (if (= 1 (:amountToChange g))
           (assoc-in db [:items (get g :itemName) :quantity]
-                    newQuantity)
-          (assoc-in db [:items (get g :itemName) :quantity]
                     newQuantity))
 
       [:items (get g :itemName) :priceOfQuantitySelected ]
+
+
       (bulk-item-pricer/get-price
         newQuantity
         (get-in db [:items (get g :itemName) :price])

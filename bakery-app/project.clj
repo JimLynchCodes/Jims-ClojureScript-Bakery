@@ -40,6 +40,7 @@
                    [re-frisk "0.5.3"]
                    [cljs-ajax "0.7.3"]
                    [reagent-material-ui "0.2.5"]
+                   [bootstrap-cljs "0.28.1-0"]
                    ]
 
     :plugins      [[lein-figwheel "0.5.13"]
