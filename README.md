@@ -1,5 +1,5 @@
-# Jims-ClojureScript-Bakery
-A Multiplatform Ecommerce Browser App For Kontor Bakery Made With ClojureScript, Reagent, And Re-Frame
+# Jim's ClojureScript-Bakery Bakery
+A Multiplatform Ecommerce Browser App For Kontor Bakery Made With ClojureScript, Reagent, And Re-frame! 
 
 Check out the live demo!  https://jimtheman.github.io/Jims-ClojureScript-Bakery
 
@@ -11,13 +11,11 @@ Scaffolded with:
 lein new re-frame bakery-app +cider +test +garden +less +trace +re-frisk
 ```
 
-A [re-frame](https://github.com/Day8/re-frame) application designed to ... well, that part is up to you.
-
 ## Development Mode
 
 ### Start Cider from Emacs:
 
-Put this in your Emacs config file:
+For Emacs config file:
 
 ```
 (setq cider-cljs-lein-repl
