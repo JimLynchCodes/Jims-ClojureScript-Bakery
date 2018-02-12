@@ -38,7 +38,9 @@
                    [figwheel-sidecar "0.5.13"]
                    [com.cemerick/piggieback "0.2.2"]
                    [re-frisk "0.5.3"]
-                   [cljs-ajax "0.7.3"]]
+                   [cljs-ajax "0.7.3"]
+                   [reagent-material-ui "0.2.5"]
+                   ]
 
     :plugins      [[lein-figwheel "0.5.13"]
                    [lein-doo "0.1.8"]]}}
