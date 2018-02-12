@@ -15,7 +15,6 @@
       {:component-did-mount               
          #((re-frame/dispatch [::handlers/load-product-list]))
        :display-name  "mail-panel"  ;; for more helpful warnings & errors
-
        :render       
                       (fn []         
                         [:div {:class "root-component"}
