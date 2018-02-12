@@ -17,6 +17,4 @@
 (re-frame/reg-sub
   ::totalPrice
   (fn [db]
-    (reduce
-     combinePricesOfSelected
-      0 (:items db))))
+    (reduce combinePricesOfSelected 0 (:items db))))
