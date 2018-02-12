@@ -1,7 +1,9 @@
 (ns bakery-app.components.container.shopping-cart
   (:require [re-frame.core :as re-frame]
             [bakery-app.reframe.subs :as subs]
-            [bakery-app.reframe.events :as events]))
+            [bakery-app.reframe.events :as events]
+            [goog.string :as gstring]
+            [goog.string.format]))
 
 (defn shopping-cart-component []
   (let [name       (re-frame/subscribe [::subs/name])
@@ -24,12 +26,14 @@
                 " x "
                 [:span (:quantity (nth item 1))]
                 " ...... $"
-                [:span (:priceOfQuantitySelected (nth item 1))]
+                [:span (gstring/format "%.2f" (:priceOfQuantitySelected (nth item 1)))]
               ])
              )
          [:div
            [:div {:class "shoppingCart__totalContainer"} "Total $"
-           [:span @totalPrice]]]
+           [:span
+            (gstring/format "%.2f" @totalPrice)
+            ]]]
 
       [:button {:on-click #(js/alert "Credit card processing coming soon!") :class "shoppingCart__checkoutButton"}
        (str "Checkout")]
