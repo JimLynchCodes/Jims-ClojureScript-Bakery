@@ -1,11 +1,7 @@
 (ns bakery-app.reframe.handlers
   (:require [ajax.core :refer [GET POST]]
             [re-frame.core :as re-frame]
-            [bakery-app.reframe.db :as db]
-;            [bakery-app.utils.node-slurp :as node-slurp]
-
-
-            ))
+            [bakery-app.reframe.db :as db]))
 
 (re-frame/register-handler
   ::load-product-list
@@ -13,20 +9,7 @@
     [db []]
 
     (println "getting data!")
-    ;; kick off the GET, making sure to supply a callback for success and failure
-;    (GET
-;      "./resources/public/products-data.json"
-;      {:handler      #(re-frame/dispatch [:process-response %1])
-;       ;; further dispatch !!
-;       :error-handler #(re-frame/dispatch [:bad-response %1])})
-    ;; further dispatch !!
-
-
-;    (node-slurp/node-slurp (js->clj "./resources/public/products-data.json")
-
-
-    ;; update a flag in `app-db` ... presumably to trigger UI changes
-
+   
 
     (assoc db :items {
                 :brownie {
