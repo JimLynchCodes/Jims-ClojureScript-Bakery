@@ -7,10 +7,6 @@
   ::load-product-list
   (fn
     [db []]
-
-    (println "getting data!")
-   
-
     (assoc db :items {
                 :brownie {
                   :id 1
@@ -45,12 +41,6 @@
                   :quantity 0
                   :priceOfQuantitySelected 0}
                 })))
-
-
-
-
-;; pure handlers must return a db
-
 
 (re-frame/register-handler               ;; when the GET succeeds
   :process-response ;; the GET callback dispatched this event
