@@ -14,13 +14,7 @@
 
     (reagent/create-class                 ;; <-- expects a map of functions
       {:component-did-mount               ;; the name of a lifecycle function
-                      #(do (println "component did mount!")
-                          (re-frame/dispatch [::handlers/load-product-list])
-;                          (re-frame/dispatch [::events/initialize-shopping-cart])
-;                          (re-frame/dispatch [::events/fuck])
-
-
-                        )
+                      #((re-frame/dispatch [::handlers/load-product-list]))
 
        ;; other lifecycle funcs can go in here
 

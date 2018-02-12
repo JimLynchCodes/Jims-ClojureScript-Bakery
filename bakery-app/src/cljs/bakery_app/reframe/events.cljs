@@ -5,11 +5,6 @@
             ))
 
 (re-frame/reg-event-db
-  ::fuck
-  (fn  [_ _]
-    db/default-db))
-
-(re-frame/reg-event-db
  ::initialize-db
  (fn  [_ _]
    db/default-db))
@@ -24,22 +19,6 @@
   ::change-item-quantity
   (fn
     [db [f g]]
-
-
-
-    (println "db is " db)
-    (println "g is " g)
-    (println "f is " f)
-    (println "in event " (get g :itemName))
-    (println "in event " (get g :itemName))
-
-
-;    (assoc-in db :items { :muffin {:quantity -1}})
-
-;    {:muffin {:quantity -1 :flavor 'blueberry}} [:muffin :quantity] 3)
-;  {:muffin {:quantity 3, :flavor blueberry}}
-
-;  (assoc-in {:muffin {:quantity -1 :flavor "blueberry"}})
 
     (let [newQuantity
       (if (= 1 (:amountToChange g))
@@ -79,20 +58,6 @@
   (fn
     [db []]
 
-    (println "init shopping cart!")
-    ;; kick off the GET, making sure to supply a callback for success and failure
-    ;    (GET
-    ;      "./resources/public/products-data.json"
-    ;      {:handler      #(re-frame/dispatch [:process-response %1])
-    ;       ;; further dispatch !!
-    ;       :error-handler #(re-frame/dispatch [:bad-response %1])})
-    ;; further dispatch !!
-
-
-    ;    (node-slurp/node-slurp (js->clj "./resources/public/products-data.json")
-
-
-    ;; update a flag in `app-db` ... presumably to trigger UI changes
 
     (assoc db :shoppingCart {
                               :cartItems []

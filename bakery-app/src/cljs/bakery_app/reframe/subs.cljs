@@ -18,17 +18,7 @@
 
 
 (defn ya [acc item]
-  (println "ARFFF")
-  (println "item " item)
-  (println "acc " acc)
-  (println "item keyword " (nth item 0))
-  (println "item obj " (nth item 1))
-  (println "price of quantity selected " (get (nth item 1) :priceOfQuantitySelected))
-
-  (println "END ARFFF")
-;  (+ (get-in item [:]) acc)
-  (+ acc (get (nth item 1) :priceOfQuantitySelected))
-  )
+  (+ acc (get (nth item 1) :priceOfQuantitySelected)))
 
 (re-frame/reg-sub
   ::totalPrice
