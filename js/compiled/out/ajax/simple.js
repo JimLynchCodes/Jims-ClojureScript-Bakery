@@ -112,4 +112,4 @@ ajax.simple.ajax_request = (function ajax$simple$ajax_request(request){
 return ajax.simple.raw_ajax_request.call(null,ajax.simple.normalize_request.call(null,request));
 });
 
-//# sourceMappingURL=simple.js.map?rel=1518580801615
+//# sourceMappingURL=simple.js.map?rel=1518582079217

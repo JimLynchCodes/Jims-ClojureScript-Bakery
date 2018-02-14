@@ -266,4 +266,4 @@ var accept = ajax.formats.accept_header.call(null,opts);
 return ajax.interceptors.map__GT_ResponseFormat.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"read","read",1140058661),ajax.formats.detect_response_format_read.call(null,opts),new cljs.core.Keyword(null,"format","format",-1306924766),["(from ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(accept),")"].join(''),new cljs.core.Keyword(null,"content-type","content-type",-508222634),accept], null));
 });
 
-//# sourceMappingURL=formats.js.map?rel=1518580800946
+//# sourceMappingURL=formats.js.map?rel=1518582078587
