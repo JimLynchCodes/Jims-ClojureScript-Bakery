@@ -14,14 +14,13 @@
     [db [f g]]
     (let [newQuantity
       (if (= 1 (:amountToChange g))
-                    (inc (get-in db [:items (get g :itemName) :quantity]))
-                    (dec (get-in db [:items (get g :itemName) :quantity])))]
+        (inc (get-in db [:items (get g :itemName) :quantity]))
+        (dec (get-in db [:items (get g :itemName) :quantity])))]
 
     (assoc-in 
       (if (= 1 (:amountToChange g))
-          (assoc-in db [:items (get g :itemName) :quantity]
-                    newQuantity))
-      [:items (get g :itemName) :priceOfQuantitySelected ]
+        (assoc-in db [:items (get g :itemName) :quantity] newQuantity))
+        [:items (get g :itemName) :priceOfQuantitySelected ]
       (bulk-item-pricer/get-price
         newQuantity
         (get-in db [:items (get g :itemName) :price])

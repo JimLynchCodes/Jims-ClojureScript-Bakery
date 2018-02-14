@@ -41,13 +41,3 @@
                   :quantity 0
                   :priceOfQuantitySelected 0}
                 })))
-
-(re-frame/register-handler               ;; when the GET succeeds
-  :process-response ;; the GET callback dispatched this event
-  (fn
-    [db [_ response]] ;; extract the response from the dispatch event vector
-    (-> db
-        (assoc :loading? false) ;; take away that modal
-        (assoc :data (js->clj response)))))  ;; fairly lame processing
-
-
