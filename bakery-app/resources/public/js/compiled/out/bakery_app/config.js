@@ -3,4 +3,4 @@ goog.provide('bakery_app.config');
 goog.require('cljs.core');
 bakery_app.config.debug_QMARK_ = goog.DEBUG;
 
-//# sourceMappingURL=config.js.map?rel=1518580803850
+//# sourceMappingURL=config.js.map?rel=1518582082022

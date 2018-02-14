@@ -13,4 +13,4 @@ return ((Math.floor((quantity / bulkAmount)) * bulkPrice) + (cljs.core.mod.call(
 }
 });
 
-//# sourceMappingURL=bulk_item_pricer.js.map?rel=1518580799354
+//# sourceMappingURL=bulk_item_pricer.js.map?rel=1518582077158
