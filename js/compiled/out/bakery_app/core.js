@@ -31,4 +31,4 @@ return bakery_app.core.mount_root.call(null);
 });
 goog.exportSymbol('bakery_app.core.init', bakery_app.core.init);
 
-//# sourceMappingURL=core.js.map?rel=1518583797257
+//# sourceMappingURL=core.js.map?rel=1518615209309

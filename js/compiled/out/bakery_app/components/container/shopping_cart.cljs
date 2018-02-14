@@ -17,8 +17,15 @@
           [:div
            (for [item @items]
              ^{:key (:id (nth item 1))}
+
+;             (if (> (:quantity (nth item 1)) 0)
+;             [:div {:key (:id (nth item 1))} "Yes"]
+;             [:div {:key (:id (nth item 1))}  "No" ])
              (if (> (:quantity (nth item 1)) 0)
-                 [cart-item/shopping-cart-component item ]))
+                 [:div {:key (:id (nth item 1))}
+                 [cart-item/shopping-cart-component item]]
+                 [:div {:key (:id (nth item 1))}])
+             )
            [:div
              [:div {:class "shoppingCart__totalContainer"} "Total $"
              [:span
