@@ -9,7 +9,6 @@
 (defn shopping-cart-component []
   (let  [items       (re-frame/subscribe [::subs/items])
          totalPrice  (re-frame/subscribe [::subs/totalPrice])]
-
     [:div {:class "shoppingCartContainer"}
       [:div {:class "shoppingCartBox"}
         [:h2 {:class "cart-header"} "Cart" ]
@@ -18,15 +17,11 @@
            (for [item @items]
              ^{:key (:id (nth item 1))}
              (if (> (:quantity (nth item 1)) 0)
-                 [:div {:key (:id (nth item 1))}
-                  [cart-item/shopping-cart-component item]]
-                 [:div {:key (:id (nth item 1))}])
-             )
-           [:div
-             [:div {:class "shoppingCart__totalContainer"} "Total $"
-             [:span
-              (gstring/format "%.2f" @totalPrice)
-              ]]]
-
+               [:div {:key (:id (nth item 1))}
+                [cart-item/shopping-cart-component item]]
+               [:div {:key (:id (nth item 1))}]))
+          [:div
+            [:div {:class "shoppingCart__totalContainer"} "Total $"
+            [:span (gstring/format "%.2f" @totalPrice)]]]
           [:button {:on-click #(js/alert "Credit card processing coming soon!") :class "shoppingCart__checkoutButton"}
            (str "Checkout")]]]]))
