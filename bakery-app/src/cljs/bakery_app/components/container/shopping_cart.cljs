@@ -12,18 +12,14 @@
 
     [:div {:class "shoppingCartContainer"}
       [:div {:class "shoppingCartBox"}
-        [:h2 "Cart"]
+        [:h2 {:class "cart-header"} "Cart" ]
           [:hr]
           [:div
            (for [item @items]
              ^{:key (:id (nth item 1))}
-
-;             (if (> (:quantity (nth item 1)) 0)
-;             [:div {:key (:id (nth item 1))} "Yes"]
-;             [:div {:key (:id (nth item 1))}  "No" ])
              (if (> (:quantity (nth item 1)) 0)
                  [:div {:key (:id (nth item 1))}
-                 [cart-item/shopping-cart-component item]]
+                  [cart-item/shopping-cart-component item]]
                  [:div {:key (:id (nth item 1))}])
              )
            [:div
