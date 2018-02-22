@@ -2,6 +2,9 @@
   (:require [re-frame.core :as re-frame]
             [bakery-app.reframe.db :as db]))
 
+
+;; Ran out of time and just hardcoded the data into a map, but I think the real i/o side-effect operation
+;; of reading from a text file deserves a handler rather than an event.
 (re-frame/register-handler
   ::load-product-list
   (fn
