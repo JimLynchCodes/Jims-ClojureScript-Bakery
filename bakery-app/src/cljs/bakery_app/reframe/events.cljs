@@ -9,6 +9,8 @@
    db/default-db))
 
 (re-frame/reg-event-db
+  ;; A little bit overly comlicated since this event let's you change quantity by any number, 
+  ;; but in this example we always just increment it by 1.
   ::change-item-quantity
   (fn
     [db [f g]]
