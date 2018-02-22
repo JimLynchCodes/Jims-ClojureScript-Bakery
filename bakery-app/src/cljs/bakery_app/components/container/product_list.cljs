@@ -6,7 +6,6 @@
 
 (defn product-list-component []
   (let [items      (re-frame/subscribe [::subs/items])]
-
     [:div {:class "productList"}
       [:h2 {:class "productBox__textContainer__title" } "Products"]
       [:hr]
