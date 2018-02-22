@@ -4,7 +4,7 @@ A Multiplatform Ecommerce Browser App For Kontor Bakery Made With ClojureScript,
 Check out the live demo!  https://jimtheman.github.io/Jims-ClojureScript-Bakery
 
 
-![screenshot](./screenshot.jpg)
+![screenshot](./bakery-screenshot.jpg)
 
 
 Scaffolded with:
