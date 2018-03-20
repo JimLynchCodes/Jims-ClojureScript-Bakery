@@ -8,7 +8,8 @@
 
   :plugins [[lein-cljsbuild "1.1.5"]
             [lein-garden "0.2.8"]
-            [lein-less "1.7.5"]]
+            [lein-less "1.7.5"]
+            [lein-doo "0.1.8"]]
 
   :min-lein-version "2.5.3"
 
@@ -44,7 +45,7 @@
                    ]
 
     :plugins      [[lein-figwheel "0.5.13"]
-                   [lein-doo "0.1.8"]]}}
+                   ]}}
 
   :cljsbuild
   {:builds
