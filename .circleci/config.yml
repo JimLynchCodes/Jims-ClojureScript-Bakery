@@ -31,7 +31,8 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: cd bakery-app && lein deps
+      - run: cd bakery-app
+      - run: lein deps
 
       - save_cache:
           paths:
