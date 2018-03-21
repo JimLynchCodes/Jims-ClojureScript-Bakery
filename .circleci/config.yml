@@ -34,7 +34,6 @@ jobs:
       - run: ls
       - run: cd bakery-app && ls
       - run: cd bakery-app && ls && lein deps
-      - run: phantomjs -v
       - run: npm i phantomjs
       - run: phantomjs -v
 
