@@ -41,4 +41,4 @@ jobs:
           key: v1-dependencies-{{ checksum "project.clj" }}
         
       # run tests!
-      - run: cd baker-app && lein doo phantom test
+      - run: cd bakery-app && lein doo phantom test
