@@ -32,9 +32,8 @@ jobs:
           - v1-dependencies-
 
       - run: ls
-      - run: cd bakery-app
-      - run: ls
-      - run: lein deps
+      - run: cd bakery-app && ls
+      - run: cd bakery-app && ls && lein deps
 
       - save_cache:
           paths:
