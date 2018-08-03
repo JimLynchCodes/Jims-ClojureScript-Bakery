@@ -79,7 +79,6 @@ The above command assumes that you have [phantomjs](https://www.npmjs.com/packag
 
 ## Production Build
 
-
 To compile clojurescript to javascript:
 
 ```
