@@ -1,5 +1,5 @@
 # Jim's ClojureScript Bakery
-A Multiplatform Ecommerce Browser App For Kontor Bakery Made With ClojureScript, Reagent, And Re-frame! 
+A Multiplatform Ecommerce Browser App For Kontor Bakery Made With ClojureScript, Reagent, and Re-frame! 
 
 Check out the live demo!  https://jimtheman.github.io/Jims-ClojureScript-Bakery
 
